@@ -63,14 +63,14 @@ jobs:
       cp -R report.html public/extent-reports
       cp -R screenshots/ public/extent-reports/screenshots/
       ls -l 
-
+     
     - name: Deploy
-     if: always()
-     uses: JamesIves/github-pages-deploy-action@v5.0.0
-     with: 
-       folder: public/extent-reports/
-       token: ${{ secrets.Test}}
-       clean: true
+    if: always()
+    uses: JamesIves/github-pages-deploy-action@v5.0.0
+    with: 
+      folder: public/extent-reports/
+      token: ${{ secrets.TEST}}
+      clean: true
     
     
 
