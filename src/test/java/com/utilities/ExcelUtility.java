@@ -18,7 +18,7 @@ import com.ui.pojo.User;
 public class ExcelUtility {
 	@DataProvider(name = "LoginTestExcelDataProvider")
 	public static Iterator<User> readExcelfile(String fileName){
-		File file = new File(System.getProperty("user.dir") + "//testData//"+ fileName);
+		File file = new File(System.getProperty("user.dir") + File.separator + "testData" + File.separator + fileName);
 		XSSFWorkbook xssfWorkbook = null;
 		XSSFSheet xssfSheet;
 		Iterator<Row> rowIterator;

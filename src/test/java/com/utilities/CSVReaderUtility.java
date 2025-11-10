@@ -15,7 +15,7 @@ import com.ui.pojo.User;
 public class CSVReaderUtility {
 	
 	public static Iterator<User> readCSVFile(String fileName) {
-		File file = new File(System.getProperty("user.dir")+"\\testData\\"+fileName);
+		File file = new File(System.getProperty("user.dir")+File.separator + "testData" + File.separator +fileName);
 		FileReader fileReader = null;
 		CSVReader csvReader;
 		String [] line;
